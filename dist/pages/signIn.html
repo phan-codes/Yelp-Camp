@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Sign In | Log in</title>
+		<link rel="stylesheet" href="../output.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600&display=swap" rel="stylesheet" />
+	</head>
+	<body class="font-Archivo">
+		<!-- ! MAIN CONTAINER -->
+		<div class="flex flex-col lg:flex-row h-screen">
+			<!-- FIRST ROW -->
+			<div class="lg:w-1/2 px-14 py-6">
+				<!-- HEADER FIRST ROW -->
+				<header class="flex justify-between lg:w-full">
+					<div>
+						<img src="../Assets/Logo.svg" alt="" />
+					</div>
+					<a href="./search.html" class="text-sm text-gray-500">← Back to campgrounds</a>
+				</header>
+
+				<!-- SIGN IN -->
+				<div class="flex flex-col space-y-8 pr-4 my-24">
+					<h2 class="font-900 text-4xl text-left max-w-38 pr-4 md:pr-8">
+						Start exploring camps from all around the world.
+					</h2>
+					<div class="flex flex-col space-y-4">
+						<label for="username" class="text-gray-500 text-sm">Username</label>
+						<input
+							type="text"
+							name="username"
+							required
+							placeholder="Enter your username"
+							class="w-full bg-gray-200 rounded h-14 p-4 md:w-10/12 focus:outline-none" />
+						<label for="password" class="text-gray-500 text-sm">Password</label>
+						<input
+							type="password"
+							name="password"
+							required
+							placeholder="Enter your password"
+							class="w-full bg-gray-200 rounded h-14 p-4 md:w-10/12 focus:outline-none" />
+					</div>
+					<a
+						href="./signIn.html"
+						class="w-full bg-black rounded h-14 text-center md:w-10/12 text-white py-4 focus:outline-none hover:bg-gray-900"
+						>Login</a
+					>
+					<div class="text-sm text-gray-500">
+						Not a user yet? <a href="./signUp.html" class="underline text-teal-500 font-bold">Create an account</a>
+					</div>
+				</div>
+			</div>
+
+			<!-- ! SECOND ROW -->
+			<div class="flex flex-col justify-center bg-gray-100 p-6 py-12 w-full h-full space-y-4 lg:w-1/2 lg:p-36">
+				<p class="font-extrabold leading-8 text-xl text-left md:justify-center md:w-2xl lg:max-w-64">
+					"YelpCamp has honestly saved me hours of research time, and the camps here are definitely well picked and
+					added."
+				</p>
+
+				<!-- AVATAR -->
+				<div class="flex">
+					<span>
+						<img src="../Assets/UserTestimonial.svg" alt="" />
+					</span>
+					<span class="px-2 mt-1">
+						<h5 class="font-extrabold text-xs">May Andrews</h5>
+						<p class="text-xs text-gray-500">Professional Hiker</p>
+					</span>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
